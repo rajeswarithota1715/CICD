@@ -1,0 +1,3 @@
+Configure >build triggers > poll SCM
+
+Set cron job * * * * *
