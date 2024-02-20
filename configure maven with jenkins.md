@@ -29,3 +29,24 @@ Manage jenkins >available > maven integration
 Provide JAVA and MAVEN home path
 
 Maven Jenkins > global tool configuration
+
+
+How to create maven project
+
+New item 
+
+Maven project
+
+Git repo path
+
+Path to pom.xml file
+
+Maven goals 
+
+	mvn clean package
+ 
+	mvn clean install
+
+if you successfully run the maven build it will create a artifact in worspace location whivh os what we need to deploy in our target environment 
+
+
