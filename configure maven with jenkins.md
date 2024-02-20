@@ -1,9 +1,14 @@
 
 Maven configuration:
+
 Install maven in jenkins server  , follow maven official documentation for installing maven in jenkins server 
+
 wget link-to-maven-package
+
 tar -xvzf package-name
+
 set up the ENV variables
+
 edit .bash_profile which is available under user home directory
 M2_HOME=/opt/maven
 M2=/opt/maven/bin
