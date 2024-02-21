@@ -14,4 +14,5 @@
 	
 Manage jenki >configre system > publish over ssh > add ssh server details and dockeradmin  credentials 
 
-while creating the pipeline , in posy deploy actions you need to select "send build artifacts over SSH" option . provide server details and files you want to move (**/*.jar) and destination path
+while creating the pipeline , in posy deploy actions you need to select "send build artifacts over SSH" option . 
+provide server details and files you want to move (**/*.jar) and destination path
