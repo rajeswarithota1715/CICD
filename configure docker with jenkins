@@ -1,0 +1,15 @@
+1.create a dedicated user and add this user to docker group
+
+	Useradd dockeradmin
+	
+	Passwd dockeradmin
+	
+	Usermod -aG docker dockeradmin
+
+2.install publish over SSH plugin to copy the war files from jenkins to docker container
+
+	Manage jenkis > manage plugins > available > publish over SSH
+
+3.add Dockerhost to Jenkins configure system
+	
+Manage jenki >configre system > publish over ssh > add ssh server details and dockeradmin  credentials 
