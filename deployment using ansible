@@ -83,7 +83,7 @@ Copy docker host ansadmin public key to ansible server ansadmin authorised keys
 
 Test the connection
 
-	Ansible all -m ping
+	ansible -i hosts.inv all -m ping
 	
 	
 Integrate Ansible with Jenkins:
@@ -91,7 +91,6 @@ Integrate Ansible with Jenkins:
 Create a user in ansible servr (ansadmin)
 
 Install publish over SSH plugin
-
 Add ansible server credentials to jenkins
 
 	Dashboard>manage jenkins>configure system>publish over SSH>add>provide ansible details
