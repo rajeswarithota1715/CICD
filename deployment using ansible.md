@@ -1,7 +1,9 @@
-Setup EC2 instance
+## deploying registration app to docker dontainer using ansible as deployment tool
 
-	Create EC2 instance
-	
+1.	Setup EC2 instance
+    - Create EC2 instance
+  
+
 Steup hostname
 
 	Vi /etc/hostname
@@ -159,8 +161,8 @@ Write ansible playbook
              command: docker push image-name
 
 Write another ansible or deploying app
-
----
+<pre>
+	---
 	- Hosts: dockerhost
 	
 	Tasks:
@@ -169,4 +171,6 @@ Write another ansible or deploying app
 	- Name: create image
 	
 	- Command: docker run -d --name regapp-server -p 8082:8080 dockerimage
+</pre>
+
 
