@@ -15,7 +15,5 @@
 
     - name: "push docker image to docker hub"
       command: "docker push rajeswarithota1715/regapp:v1"
-
-    - name: "run the docker image"
-      command: "docker run -d --name regapp -p 8090:8080 regapp:v1"
+ 
 </pre>
