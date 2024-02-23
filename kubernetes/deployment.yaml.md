@@ -1,32 +1,30 @@
 <pre>
-  apiVersion: v1
-  kind: Deployment
-  metadata:
-    name: registration application
-    labels:
-      app: regapp
- spec:
-  replicas: 2
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: registration-deployment
+spec:
   selector:
     matchLabels:
       app: regapp
-  template:
-    metadata:
-      name: registration app
-      labels:
-        app: regapp
-  spec:
-    containers:
-    - name: regapp
-      image:rajeswarithota1715/regapp
-      imagePullPolicy: Always
-      ports:
-      - containerPort: 8080
+  replicas: 2 # tells deployment to run 2 pods matching the template
   strategy:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 1
       maxUnavailable: 1
-  
+
+  template:
+    metadata:
+      labels:
+        app: regapp
+    spec:
+      containers:
+      - name: registration-project
+        image: rajeswarithota1715/regapp:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+
   
 </pre>
