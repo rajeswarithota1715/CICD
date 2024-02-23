@@ -15,7 +15,6 @@
 
     - name: "push docker image to docker hub"
       command: "docker push rajeswarithota1715/regapp:v1"
-    - name: "remove docker images from localsothat it will pull from docker hub"
-      command: "docker rmi regapp:v1 rajeswarithota1715/regapp:v1"
+    
  
 </pre>
